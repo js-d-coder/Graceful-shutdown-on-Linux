@@ -19,5 +19,6 @@ do
 		done
 	fi
 done
-rm ~/.pid/docker-compose-pid
-echo "$(date)" ": gracefull shutdown successful" > ~/.pid/last-shutdown-status
+# track gracefull shutdown
+mkdir -p ~/.gracefull-shutdown
+echo "$(date)" ": gracefull shutdown successful" > ~/.gracefull-shutdown/last-shutdown-status
