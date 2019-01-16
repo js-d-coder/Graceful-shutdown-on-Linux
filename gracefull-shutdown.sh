@@ -2,7 +2,7 @@
 
 # list your programs here
 # make sure the name you put here are tested with pkill
-programs_list="chromium sublime_text tmux"
+programs_list="chromium sublime_text tmux firefox"
 
 for program in $(echo $programs_list)
 do
