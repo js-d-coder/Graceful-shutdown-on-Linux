@@ -8,6 +8,8 @@ for program in $(echo $programs_list)
 do
 	pkill --signal SIGTERM "$program"
 done
+
+# wait for programs to exit
 for program in $(echo $programs_list)
 do
 	if get-pidof.sh $program
@@ -19,6 +21,3 @@ do
 		done
 	fi
 done
-# track gracefull shutdown
-mkdir -p ~/.gracefull-shutdown
-echo "$(date)" ": gracefull shutdown successful" > ~/.gracefull-shutdown/last-shutdown-status
