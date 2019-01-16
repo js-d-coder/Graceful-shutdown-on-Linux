@@ -1,2 +1,2 @@
-# Gracefull shutdown of given programs on Linux
-Gracefully shutdown program and wait for them to exit doing so on Linux
+# Gracefull shutdown
+Do gracefully shutdown of given programs and wait for them to exit, in doing so, on Linux
