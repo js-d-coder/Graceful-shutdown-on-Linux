@@ -12,9 +12,9 @@ done
 # wait for programs to exit
 for program in $(echo $programs_list)
 do
-	if get-pidof.sh $program
+	if pgrep -fo $program
 	then
-		pid=$(get-pidof.sh $program)
+		pid=$(pgrep -fo $program)
 		while [ -e /proc/$pid ]
 		do
 			sleep 0.5
