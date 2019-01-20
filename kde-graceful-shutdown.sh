@@ -12,7 +12,7 @@ then
 	child_procs=$(pgrep -d ' ' -P $plasmashell_pid)
 	for c_pid in $(echo $child_procs)
 	do
-		pkill --signal SIGTERM $c_pid
+		kill -s SIGTERM $c_pid
 	done
 	for c_pid in $(echo $child_procs)
 	do
