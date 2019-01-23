@@ -1,3 +1,5 @@
+**NOTE**: this project has moved to https://gitlab.com/js-d-coder/Graceful-shutdown-on-Linux
+
 # Graceful shutdown
 Do graceful shutdown of given programs and wait for them to exit, in doing so, on Linux distribution.  
 
